@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+    <div id="message"></div>
+
+
+<h1 id="message">Welcome to js</h1> 
+
+<h1>Welcome to My Project</h1>
+
+  <button onclick="showAlert()">Click Me</button>
+
+
+
+    <!-- Q number 5-->
+    <script>
+        var a = 4;
+if (++a === 5) {
+    alert("given condition for variable a is true");
+} 
+
+//---Q number  1---//
+
+
+ 
+  let city = prompt("Enter your city name:");
+
+  
+  if (city && city.toLowerCase() === "karachi") {
+    alert("Welcome to city of lights");
+  } else {
+    alert("Welcome to " + city);
+  
+}
+
+
+
+//---Q number 2---//
+
+
+let gender = prompt("Please enter your gender (male/female):").toLowerCase();
+
+    if (gender === "male") {
+      alert("Good Morning Sir.");
+    } else if (gender === "female") {
+      alert("Good Morning Ma’am.");
+    } else {
+      alert("Invalid input. Please enter 'male' or 'female'.");
+    }
+
+
+
+    //---Q number 3---//
+
+
+     let fuel = parseFloat(prompt("Enter remaining fuel in litres:"));
+    if (fuel < 0.25) {
+      alert("Please refill the fuel in your car");
+    } else {
+      alert("You have enough fuel");
+    
+    }
+
+                                         //---Q number 1---//
+
+     alert("Welcome to our website! Have a great day");
+      
+
+
+                                        //---Q number 2---//
+
+
+    document.getElementById("message").innerText = "Welcome to My Web Page";
+
+                                        //---Q number 3---//
+
+   let message = "Welcome to our website my website is good";
+
+   document.getElementById("message").innerHTML = message.replace(/\n/g, "<br>");
+
+                                        //---Q number 4---//
+
+                                        function showAlert() {
+      alert("Hello! This is my websit.");
+    }
+
+
+                   
+                                        
+    </script>
+
+    <script src="js.app"> </script>
+</body>
+</html>
